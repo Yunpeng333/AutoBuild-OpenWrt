@@ -8,9 +8,10 @@
 name: Build_R619AC
 
 on: 
-  release:
-    types: [published]
-
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+    
   #push:
   # branches: 
   #  - master
